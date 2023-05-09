@@ -15,7 +15,7 @@ public class Main {
 
 		Calculador calculadorNOJubiladoSinPromocion = new CalculadorNOJubilado(now().getMonth().getValue() - 1);
 
-		Calculador calculadorNOJubiladoConPromocion = new CalculadorJubilado(now().getMonth().getValue());
+		Calculador calculadorNOJubiladoConPromocion = new CalculadorNOJubilado(now().getMonth().getValue());
 
 		System.out.println(calculadorJubiladoSinPromocion.calcularPrecio(100));
 		System.out.println(calculadorJubiladoConPromocion.calcularPrecio(100));

@@ -17,9 +17,10 @@ public abstract class Calculador {
 		log.log(this.getClass().getName());
 		if (of(mesEnPromocion).equals(now().getMonth())) { // SI esta en promocion
 			return this.mesEnPromocion(precioProducto);
-		} else { // si NO esta en mes de promocion
-			return this.mesSinPromocion(precioProducto);
 		}
+		// si NO esta en mes de promocion
+		return this.mesSinPromocion(precioProducto);
+
 	}
 
 	protected abstract double mesEnPromocion(double precioProducto);
